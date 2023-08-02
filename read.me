@@ -1,0 +1,78 @@
+#Resumo da aplicação---------------------------------------------------------------------------------------
+    (19/03/2023 17:41) Matheus R.: A ideia é replicar as funcionalidades 
+        principais de um aplicativo de gestão de tempo de atividades voltado 
+        para membros de equipes, tornando-o um aplicativo de gestão de tempo 
+        para projetos no médio prazo, podendo ampliá-lo para um formato 
+        mobile no longo prazo.
+    (23/02/2023 20:25) Matheus R.: 
+#Funcionalidades do Sistema---------------------------------------------------------------------------------
+            1 - Cronometrar o tempo de atividade do usuário - Done (05/05/2023)
+            2 - Cronometrar o tempo de pausa ou descanço do usuário - Done (05/05/2023)
+            3 - Permitir que o usuário defina a duração dos intervalos, tanto
+                de atividade quanto de descanso  - Done (05/05/2023)
+            4 - Armazenar os dados de tempo do usuário
+            5 - Gerar relatórios de análise de produtividade (e posteriores relatórios
+                nesse sentido)
+    (04/05/2023 22:49) Matheus R.: 
+            6 - Permitir que o usuário pause ou retome a contagem a qualquer momento - Done (05/05/2023)
+            7 - Permitir que o usuário possa zerar o cronometro tanto em atividade quanto
+                em descanso (pular intervalo) - Done (05/05/2023)
+            8 - Alertar o usuário quando o tempo de atividade ou de pausa acabar
+    (05/05/2023 21:10) Matheus R.:
+            9 - Permitir que o usuário escolha o papel de fundo
+                Consigo fazer isso para um vídeo? Como seria?
+                Consigo apenas mostra a música do vídeo?
+                Tanto o vídeo quanto a música impactam no servidor?
+            10- Criar um menu para segurar dados do usuário e configurações do pomodoro
+    (06/05/2023 02:27) Matheus R.:
+            11- Organizar melhor as funcionalidade (aqui)
+            12- Utilizar botões com quantidade padrão de tempo (até aprender avalidar a entrada do usuáro)
+    (07/05/2023 19:38) Matheus R.:
+            13- Falta um botão de salvar configs, ao escolher o tempo do timer, mudar o timer real 
+                para o tempo escolhido automaticamente
+                Devido a testes de uso com usuário familiarizado com sistema, mexer na interface, não está intuitivo
+                Eu consigo colocar o formulário e o pomodoro em uma só tela? Devo?
+                Eu permitir ajustes de tempo diretamente no "relógio" faria o sistema ser mais intuivo?
+                Como eu faço para ter o sinal sonoro para alertar o usuário?
+                Pensar em icone para colocar na aba da página            
+#Desenvolvimento--------------------------------------------------------------------------------------------
+    (19/03/2023 17:41) Matheus R.: Dada uma análise inicial dos requisitos
+        sem aprofundamento em necessidades reais de usuários, a ideia é criar um
+        timer que contabilize um ciclo de pomodoro (25 min), podendo ser pausado
+        ou finalizado a qualquer instante pelo usuário ou que termine e informe o
+        usuário do final do ciclo e inicie o tempo de descanso (5 min).
+            Passo 1 - Criar o timer, fazendo aparecer e realizar contagem regressiva
+            até 0. (Finalizado em 19/02/2023 19:26)
+    (19/03/2023 22:44) Matheus R.:
+            Passo 2 - Utilizar separação de contadores, ou seja, dividir em horas, 
+            minutos e segundos para realizar a exibição na tela.
+    (22/02/2023 20:38) Matheus R.: Foi implementado com relativa facilidade a 
+        divisão do cronometro em horas, minutos e segundos. Contudo, até o momento
+        estou utilizando de um pequeno gato no código para conseguir deixar com duas
+        casas decimais antes da virgula quando o valor exibido é menor do que 10.
+    (23/02/2023 20:25) Matheus R.: 
+            Passo 3 - Possibilitar que o usuário escolha o quanto tempo gostaria de
+            usar nos pomodoros - done (02/05/2023)
+    (04/04/2023 22:06) Matheus R.: 
+            Passo 4 - Quando iniciar o timer, sumir com o botão começar e aparecer 
+            o botão pausar - done (02/05/2023)
+    (04/05/2023 22:53)
+            Passo 5 - Permitir que o usuário retome o cronometro de onde fez a pausa
+#Pontos de dúvida/pesquisa/melhoria-------------------------------------------------------------------------
+    (22/02/2023 20:38) Matheus R.: Como criar issues dentro do read.me? Ou só se faz 
+        Isso no Git/Github?
+        Como fazer para exibir um 0 ao lado de número menores do que 10? - Done (02/05/2023)
+    (02/05/2023 22:42) Matheus R.: Preciso usar o Jquery para validar a entrada de dados?
+        Ou é mais fácil deixar prefixadas as opções de tempo?
+    (04/05/2023 22:30) Matheus R.: Como modificar a fonte do site? tag que usar
+        Não posso permitir a entrada de "tempo" negativo, como lidar? 
+        Preciso alterar o tipo do campo?
+    (05/05/2023 19:10) Matheus R.: Como fazer o design visual do relógio? JS provavelmente, mas como?
+        Na validação dos campos, não podem ter valores vazios nem iguais a 0
+        Para o Login do usuário, como fazer para aceitar login com google e redes sociais?
+#Referencias bibliográficas---------------------------------------------------------------------------------
+
+    Site W3School (https://www.w3schools.com/howto/howto_js_countdown.asp)
+    Livro "JavaScript - O guia Definitivo" ´p. 332, FLANAGAN David, editora O'Reilly
+    Site Benchmark (https://pomofocus.io/)
+    Siste com tipos de menu (https://www.mxcursos.com/blog/30-modelos-de-menus-responsivos-gratuitos/)
