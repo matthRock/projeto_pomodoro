@@ -15,4 +15,4 @@ name: Deploy via ftp
             host: ${{ secrets.HOST }} 
             user: ${{ secrets.USER }}
             password: ${{ secrets.PASS }}
-            localDir: "public_html/_projeto/"
+            localDir: "_proj"
