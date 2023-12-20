@@ -16,4 +16,4 @@ name: Deploy via ftp
             host: ${{ secrets.HOST }} 
             user: ${{ secrets.USER }}
             password: ${{ secrets.PASS }}
-            localDir: public_html/_proj/projeto_pomodoro
+            localDir: public_html/projeto_pomodoro
