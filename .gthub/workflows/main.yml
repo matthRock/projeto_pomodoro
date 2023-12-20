@@ -13,4 +13,5 @@ jobs:
         host: ${{ secrets.HOST }} 
         user: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
-        localDir: "/public_html/projeto_pomodoro"
+        localDir: "."
+        remoteDir: "./public_html/projeto_pomodoro"
