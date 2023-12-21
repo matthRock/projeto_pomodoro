@@ -1,2 +1,2 @@
 # projeto_pomodoro
-Repositório voltado para desenvolvimento de sistema pomodoro em JavaScript
+Repositório voltado para desenvolvimento de sistema pomodoro utilizando HTML, JS e CSS

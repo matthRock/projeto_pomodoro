@@ -1,81 +1,100 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+** {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid red;
 }
-.padrao{
-    margin: 0.4em;
-    padding: 0.4em;
+body{
+  margin: 0px;
 }
-.debugando{
-    border: 1px solid red;
+
+.padrao {
+  /*margin: 0.4em;*/
+  padding: 0.55em;
 }
-#pomodoro{
-    width: auto;
-    height: auto;
-    text-align: center;
+
+.debugando1 {
+  border: 1px solid red;
 }
+
+#pomodoro {
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
 /*configurcoes dos botoes do pomodoro*/
-#pausar, #continuar, #zerar, #pular{
-    display:none;
+#pausar,
+#continuar,
+#zerar,
+#pular {
+  display: none;
 }
-#titulo{
-    color:white;
-    opacity:70%;
+
+#titulo {
+  color: white;
+  opacity: 70%;
+  padding: 0.55em;
 }
-#exibir{
-    font-size: xx-large;
-    color:rgba(255, 255, 255);
+
+#exibir {
+  font-size: xx-large;
+  color: rgba(255, 255, 255);
 }
 
 /*configuracoes do menu*/
-nav{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    box-sizing: border-box;
-    z-index: 4;
-    background-color: rgb(44, 42, 44);
-    padding: 0;
-    margin: 0;
+nav {
+  /*position: fixed;*/
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(44, 42, 44);
+  padding: 0;
+  margin: 0;
 
 }
-#showMain{
-    display: none;
+
+#showMain {
+  display: none;
 }
-#showConfig{
-    display: block; 
+
+#showConfig {
+  display: block;
 }
 
 /*configuracoes dos containers de conteudo*/
-#configurar{
-    display:none;
-    width:25%;
-    padding: 7% 5%;
-    margin:auto;
-    font-size: xx-large;
-    color:rgba(255, 255, 255);
+#configurar {
+  display: none;
+  width: 25%;
+  padding: 7% 5%;
+  margin: auto;
+  font-size: xx-large;
+  color: rgba(255, 255, 255);
 }
-#main{
-    border: 0.45em rgba(255, 255, 255, 0.342) solid;
-    border-radius: 100%;
-    width:15%;
-    padding:10% 5%;
-    margin:auto;
-    background-color: rgba(182, 28, 174, 0.548);
+
+#main {
+  border: 0.45em rgba(255, 255, 255, 0.342) solid;
+  border-radius: 100%;
+  width: 15%;
+  padding: 10% 5%;
+  margin: auto;
+  background-color: rgba(182, 28, 174, 0.548);
 }
 
 /*declaracoes de font-icons*/
-.fa-solid{
-    color:rgba(255, 255, 255, 0.600);
+.fa-solid {
+  color: rgba(255, 255, 255, 0.600);
 }
-.fa-gear, .fa-clock{
-    font-size:1.7rem;
+
+.fa-gear,
+.fa-clock {
+  font-size: 1.7rem;
 }
-nav > ul, li{
-    list-style: none;
-    display:inline;
+
+nav>ul,
+li {
+  list-style: none;
+  display: inline;
 }
-.aviso{
-    font-size: smaller;
-    color:red;
+
+.aviso {
+  font-size: smaller;
+  color: red;
 }
