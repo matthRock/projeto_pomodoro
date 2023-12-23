@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<!--comentario-->
 <html lang="pt-br">
-
 <head>
   <meta charset="utf-8" />
   <meta author="Matheus Rocha" />
   <title>Timer</title>
-  <script src="/projeto/js/script.js"></script>
-  <link rel="stylesheet" href="/projeto/css/style.css" />
-  <style>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <!--<style>
     body {
       background-image: url('projeto/img/background_01.jpg');
       background-repeat: no-repeat;
       background-size: cover;
     }
-  </style>
+  </style>-->
   <script src="https://kit.fontawesome.com/97abe68758.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <nav class="debugando1">
+  <nav class="debugando">
     <div id="showConfig" class="padrao">
       <a href="#" onclick="exibirConfiguracao()"><i class="fa-solid fa-gear debugado"></i></a>
     </div>
@@ -27,22 +24,22 @@
       <a href="#" onclick="exibirPrincipal()"><i class="fa-solid fa-clock debugado"></i></a>
     </div>
   </nav>
-  <header id="titulo" class="debugando1">
+  <header id="titulo" class="debugando">
     <h1>Pomodoro de Estudos</h1>
   </header>
-  <section id="pomodoro" class="debugando">
-    <div id="main">
-      <div id="exibir" class="debugado">00:00:00</div>
+  <section id="pomodoro" class="debugando1">
+    <div id="main" class="debugando1">
+      <div id="exibir" class="debugando1">00:00:00</div>
       <div class="botoes debugado">
-        <button class="debugado" id="iniciar" onclick="inicializaContagem()">Iniciar</button>
-        <button class="debugado" id="pausar" onclick="pausaContagem()">Pausar</button>
-        <button class="debugano" id="continuar" onclick="inicializaContagem()">Continuar</button>
-        <button class="debugano" id="zerar" onclick="zeraContagem()">Zerar</button>
-        <button class="debugado" id="pular" onclick="zeraContagem()">Pular Descanso</button>
+        <button class="debugando1" id="iniciar" onclick="inicializaContagem()">Iniciar</button>
+        <button class="debugando1" id="pausar" onclick="pausaContagem()">Pausar</button>
+        <button class="debugando1" id="continuar" onclick="inicializaContagem()">Continuar</button>
+        <button class="debugando1" id="zerar" onclick="zeraContagem()">Zerar</button>
+        <button class="debugando1" id="pular" onclick="zeraContagem()">Pular Descanso</button>
       </div>
     </div>
-    <div id="configurar" class="debugando">
-      <label for="tempo" class="debugando">Tempo Atividade:</label>
+    <div id="configurar" class="debugando1">
+      <label for="tempo" class="debugando1">Tempo Atividade:</label>
       <input class="debugando" type="number" id="tempo" placeholder="25 minutos" />
       <br />
       <label class="debugando" for="descanso">Tempo Descanso:</label>
@@ -54,5 +51,4 @@
     </div>
   </section>
 </body>
-
 </html>

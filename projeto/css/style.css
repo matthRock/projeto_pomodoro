@@ -1,9 +1,10 @@
-** {
+*{
   font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 body{
   margin: 0px;
+  background-color:#b2d9f7;
 }
 
 .padrao {
@@ -15,10 +16,45 @@ body{
   border: 1px solid red;
 }
 
+nav {
+  /*position: fixed;*/
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #3d3c3b;
+  padding: 0;
+  margin: 0;
+}
+nav>ul,
+li {
+  list-style: none;
+  display: inline;
+}
+#titulo {
+  color: #3d3c3b;
+  opacity: 70%;
+  padding: 0.55em;
+}
+
 #pomodoro {
   width: auto;
   height: auto;
   text-align: center;
+  padding:0.55em;
+}
+
+#main {
+  border: 0.45em rgba(72, 122, 161, 0.342) solid;
+  border-radius: 100%;
+  width: 15%;
+  padding: 10% 5%;
+  margin: auto;
+  background-color: ;
+}
+
+#exibir {
+  font-size: xx-large;
+  color: #3d3c3b;
+  width:auto;
 }
 
 /*configurcoes dos botoes do pomodoro*/
@@ -29,27 +65,7 @@ body{
   display: none;
 }
 
-#titulo {
-  color: white;
-  opacity: 70%;
-  padding: 0.55em;
-}
-
-#exibir {
-  font-size: xx-large;
-  color: rgba(255, 255, 255);
-}
-
 /*configuracoes do menu*/
-nav {
-  /*position: fixed;*/
-  width: 100%;
-  box-sizing: border-box;
-  background-color: rgb(44, 42, 44);
-  padding: 0;
-  margin: 0;
-
-}
 
 #showMain {
   display: none;
@@ -69,18 +85,10 @@ nav {
   color: rgba(255, 255, 255);
 }
 
-#main {
-  border: 0.45em rgba(255, 255, 255, 0.342) solid;
-  border-radius: 100%;
-  width: 15%;
-  padding: 10% 5%;
-  margin: auto;
-  background-color: rgba(182, 28, 174, 0.548);
-}
 
 /*declaracoes de font-icons*/
 .fa-solid {
-  color: rgba(255, 255, 255, 0.600);
+  color: #dde3ca;
 }
 
 .fa-gear,
@@ -88,11 +96,7 @@ nav {
   font-size: 1.7rem;
 }
 
-nav>ul,
-li {
-  list-style: none;
-  display: inline;
-}
+
 
 .aviso {
   font-size: smaller;
