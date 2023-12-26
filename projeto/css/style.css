@@ -1,14 +1,16 @@
-.debugando2{
+.debugando2 {
   border: 1px solid red;
 }
+
 @media screen and (min-width: 600px) {
-  *{
+  * {
     font-family: Arial, Helvetica, sans-serif;
     /*border: 1px solid red;*/
   }
-  body{
+
+  body {
     margin: 0px;
-    background-color:#b2d9f7;
+    background-color: #b2d9f7;
   }
 
   .padrao {
@@ -16,7 +18,7 @@
     padding: 0.55em;
   }
 
-  .debugand{
+  .debugand {
     border: 1px solid red;
   }
 
@@ -28,11 +30,13 @@
     padding: 0;
     margin: 0;
   }
+
   nav>ul,
   li {
     list-style: none;
     display: inline;
   }
+
   #titulo {
     color: #3d3c3b;
     opacity: 70%;
@@ -43,7 +47,7 @@
     width: auto;
     height: auto;
     text-align: center;
-    padding:0.55em;
+    padding: 0.55em;
   }
 
   #main {
@@ -58,7 +62,7 @@
   #exibir {
     font-size: xx-large;
     color: #3d3c3b;
-    width:auto;
+    width: auto;
   }
 
   /*configurcoes dos botoes do pomodoro*/
@@ -109,24 +113,25 @@
 }
 
 @media screen and (max-width: 599px) {
-  *{
+  * {
     font-family: Arial, Helvetica, sans-serif;
     /*border: 1px solid red;*/
   }
-  body{
+
+  body {
     margin: 0px;
-    background-color:#b2d9f7;
+    background-color: #b2d9f7;
   }
-  
+
   .padrao {
     /*margin: 0.4em;*/
     padding: 0.55em;
   }
-  
-  .debugand{
+
+  .debugand {
     border: 1px solid red;
   }
-  
+
   nav {
     /*position: fixed;*/
     width: 100%;
@@ -135,17 +140,19 @@
     padding: 0;
     margin: 0;
   }
+
   nav>ul,
   li {
     list-style: none;
     display: inline;
   }
+
   #titulo {
     color: #3d3c3b;
     opacity: 70%;
     padding: 0.55em;
   }
-  
+
   #pomodoro {
     width: 100%;
     display: flex;
@@ -153,7 +160,7 @@
     text-align: center;
     padding: 0.55em;
   }
-  
+
   #main {
     display: flex;
     flex-direction: column;
@@ -165,36 +172,37 @@
     height: 7em;
     background-color: ;
   }
-  
+
   #exibir {
     font-size: 3em;
     color: #3d3c3b;
     width: auto;
   }
-  
+
   /*configurcoes dos botoes do pomodoro*/
   #iniciar {
-    
+    text-align: center;
+    /*Iniciar alterações no formato do botão*/
   }
 
-  
+
   #pausar,
   #continuar,
   #zerar,
   #pular {
     display: none;
   }
-  
+
   /*configuracoes do menu*/
-  
+
   #showMain {
     display: none;
   }
-  
+
   #showConfig {
     display: block;
   }
-  
+
   /*configuracoes dos containers de conteudo*/
   #configurar {
     display: none;
@@ -204,17 +212,17 @@
     font-size: 2em;
     color: rgba(255, 255, 255);
   }
-  
+
   /*declaracoes de font-icons*/
   .fa-solid {
     color: #dde3ca;
   }
-  
+
   .fa-gear,
   .fa-clock {
     font-size: 1.7rem;
   }
-  
+
   .aviso {
     font-size: smaller;
     color: red;
