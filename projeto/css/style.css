@@ -1,104 +1,222 @@
-*{
-  font-family: Arial, Helvetica, sans-serif;
-  /*border: 1px solid red;*/
-}
-body{
-  margin: 0px;
-  background-color:#b2d9f7;
-}
-
-.padrao {
-  /*margin: 0.4em;*/
-  padding: 0.55em;
-}
-
-.debugand{
+.debugando2{
   border: 1px solid red;
 }
+@media screen and (min-width: 600px) {
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+    /*border: 1px solid red;*/
+  }
+  body{
+    margin: 0px;
+    background-color:#b2d9f7;
+  }
 
-nav {
-  /*position: fixed;*/
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #3d3c3b;
-  padding: 0;
-  margin: 0;
+  .padrao {
+    /*margin: 0.4em;*/
+    padding: 0.55em;
+  }
+
+  .debugand{
+    border: 1px solid red;
+  }
+
+  nav {
+    /*position: fixed;*/
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #3d3c3b;
+    padding: 0;
+    margin: 0;
+  }
+  nav>ul,
+  li {
+    list-style: none;
+    display: inline;
+  }
+  #titulo {
+    color: #3d3c3b;
+    opacity: 70%;
+    padding: 0.55em;
+  }
+
+  #pomodoro {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding:0.55em;
+  }
+
+  #main {
+    border: 0.45em rgba(72, 122, 161, 0.342) solid;
+    border-radius: 100%;
+    width: 15%;
+    padding: 10% 5%;
+    margin: auto;
+    background-color: ;
+  }
+
+  #exibir {
+    font-size: xx-large;
+    color: #3d3c3b;
+    width:auto;
+  }
+
+  /*configurcoes dos botoes do pomodoro*/
+  #pausar,
+  #continuar,
+  #zerar,
+  #pular {
+    display: none;
+  }
+
+  /*configuracoes do menu*/
+
+  #showMain {
+    display: none;
+  }
+
+  #showConfig {
+    display: block;
+  }
+
+  /*configuracoes dos containers de conteudo*/
+  #configurar {
+    display: none;
+    width: 25%;
+    padding: 7% 5%;
+    margin: auto;
+    font-size: xx-large;
+    color: rgba(255, 255, 255);
+  }
+
+
+  /*declaracoes de font-icons*/
+  .fa-solid {
+    color: #dde3ca;
+  }
+
+  .fa-gear,
+  .fa-clock {
+    font-size: 1.7rem;
+  }
+
+
+
+  .aviso {
+    font-size: smaller;
+    color: red;
+  }
 }
-nav>ul,
-li {
-  list-style: none;
-  display: inline;
-}
-#titulo {
-  color: #3d3c3b;
-  opacity: 70%;
-  padding: 0.55em;
-}
 
-#pomodoro {
-  width: auto;
-  height: auto;
-  text-align: center;
-  padding:0.55em;
-}
+@media screen and (max-width: 599px) {
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+    /*border: 1px solid red;*/
+  }
+  body{
+    margin: 0px;
+    background-color:#b2d9f7;
+  }
+  
+  .padrao {
+    /*margin: 0.4em;*/
+    padding: 0.55em;
+  }
+  
+  .debugand{
+    border: 1px solid red;
+  }
+  
+  nav {
+    /*position: fixed;*/
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #3d3c3b;
+    padding: 0;
+    margin: 0;
+  }
+  nav>ul,
+  li {
+    list-style: none;
+    display: inline;
+  }
+  #titulo {
+    color: #3d3c3b;
+    opacity: 70%;
+    padding: 0.55em;
+  }
+  
+  #pomodoro {
+    width: 100%;
+    display: flex;
+    height: 20em;
+    text-align: center;
+    padding: 0.55em;
+  }
+  
+  #main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: 0.45em rgba(72, 122, 161, 0.342) solid;
+    border-radius: 100%;
+    width: 40%;
+    padding: 15% 5% 5% 5%;
+    height: 7em;
+    background-color: ;
+  }
+  
+  #exibir {
+    font-size: 3em;
+    color: #3d3c3b;
+    width: auto;
+  }
+  
+  /*configurcoes dos botoes do pomodoro*/
+  #iniciar {
+    
+  }
 
-#main {
-  border: 0.45em rgba(72, 122, 161, 0.342) solid;
-  border-radius: 100%;
-  width: 15%;
-  padding: 10% 5%;
-  margin: auto;
-  background-color: ;
-}
-
-#exibir {
-  font-size: xx-large;
-  color: #3d3c3b;
-  width:auto;
-}
-
-/*configurcoes dos botoes do pomodoro*/
-#pausar,
-#continuar,
-#zerar,
-#pular {
-  display: none;
-}
-
-/*configuracoes do menu*/
-
-#showMain {
-  display: none;
-}
-
-#showConfig {
-  display: block;
-}
-
-/*configuracoes dos containers de conteudo*/
-#configurar {
-  display: none;
-  width: 25%;
-  padding: 7% 5%;
-  margin: auto;
-  font-size: xx-large;
-  color: rgba(255, 255, 255);
-}
-
-
-/*declaracoes de font-icons*/
-.fa-solid {
-  color: #dde3ca;
-}
-
-.fa-gear,
-.fa-clock {
-  font-size: 1.7rem;
-}
-
-
-
-.aviso {
-  font-size: smaller;
-  color: red;
+  
+  #pausar,
+  #continuar,
+  #zerar,
+  #pular {
+    display: none;
+  }
+  
+  /*configuracoes do menu*/
+  
+  #showMain {
+    display: none;
+  }
+  
+  #showConfig {
+    display: block;
+  }
+  
+  /*configuracoes dos containers de conteudo*/
+  #configurar {
+    display: none;
+    width: 25%;
+    padding: 7% 5%;
+    margin: auto;
+    font-size: 2em;
+    color: rgba(255, 255, 255);
+  }
+  
+  /*declaracoes de font-icons*/
+  .fa-solid {
+    color: #dde3ca;
+  }
+  
+  .fa-gear,
+  .fa-clock {
+    font-size: 1.7rem;
+  }
+  
+  .aviso {
+    font-size: smaller;
+    color: red;
+  }
 }
